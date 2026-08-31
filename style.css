@@ -1,0 +1,165 @@
+/* Base page styles for a clean, readable layout. */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #edf8f8;
+  color: #183f4d;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: 1100px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* Simple top header that matches the calm blue and teal palette. */
+.site-header {
+  background: rgba(234, 248, 248, 0.96);
+  border-bottom: 1px solid rgba(12, 86, 98, 0.12);
+}
+
+.brand {
+  margin: 0;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #0d4d63;
+  text-transform: uppercase;
+}
+
+/* Full-height banner with a subtle nature background and overlay for readability. */
+.cta-banner {
+  min-height: 620px;
+  background:
+    linear-gradient(rgba(9, 42, 61, 0.42), rgba(9, 42, 61, 0.52)),
+    url("img/cta-bg.jpg") center center / cover no-repeat;
+}
+
+.cta-banner .container {
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+
+.cta-content {
+  width: 58%;
+  padding: 2.5rem 2.25rem;
+  border-radius: 18px;
+  background: rgba(7, 38, 52, 0.18);
+}
+
+.eyebrow {
+  margin: 0;
+  color: #d8f8f6;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.cta-content h1 {
+  margin: 0.8rem 0 1rem;
+  color: #f5fbff;
+  font-size: clamp(2.6rem, 5vw, 4.5rem);
+  line-height: 1.08;
+}
+
+.cta-content p {
+  margin: 0 0 1.75rem;
+  max-width: 34rem;
+  color: #eaf8ff;
+  font-size: 1.1rem;
+}
+
+/* Bright button that stands out against the background image. */
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #1cc7be;
+  color: #07384a;
+  font-size: 1.06rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 999px;
+  box-shadow: 0 12px 22px rgba(28, 199, 190, 0.35);
+}
+
+.cta-button:hover {
+  background: #26d9c9;
+}
+
+/* Two-column section for the supporting information. */
+.info-section {
+  background: #f5fbfc;
+  padding: 80px 0;
+}
+
+.info-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4%;
+}
+
+.info-image,
+.info-copy {
+  width: 48%;
+  box-sizing: border-box;
+}
+
+.info-image img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 20px 35px rgba(14, 61, 76, 0.12);
+}
+
+.info-copy h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #123f54;
+  font-size: clamp(2rem, 3vw, 2.8rem);
+}
+
+.info-copy p {
+  margin: 0 0 1rem;
+  color: #355d6c;
+  font-size: 1.08rem;
+}
+
+@media (max-width: 760px) {
+  .cta-content {
+    width: 100%;
+  }
+
+  .info-image,
+  .info-copy {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .info-image {
+    margin-bottom: 2rem;
+  }
+
+  footer {
+    background-color: #006064;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1em;
+    margin-top: auto;
+  }
+
+  footer p {
+    margin: 0;
+  }
+}
